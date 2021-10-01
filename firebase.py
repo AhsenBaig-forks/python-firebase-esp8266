@@ -11,7 +11,7 @@ def readData():
     req = ureq.get(Firebaseurl)
     return req.json()
 
-# Reading Data
+# Reading Firebase realtime data
 def activate():
     while True:
         data = readData()
